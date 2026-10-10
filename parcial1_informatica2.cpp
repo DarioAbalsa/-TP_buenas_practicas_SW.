@@ -38,7 +38,6 @@ int main(int argc, char *argv[]) {
 		menu();
 		printf("Opcion: ");
 		scanf("%d", &opcion);
-		limpiarBuffer();
 		switch(opcion){
 		case 1:
 			inter=agregarInterseccion(inter,&cantidad);
