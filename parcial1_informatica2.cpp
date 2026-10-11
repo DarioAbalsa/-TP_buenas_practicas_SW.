@@ -16,17 +16,15 @@ void menu();
 Interseccion* agregarInterseccion(Interseccion *lista, int *cantidad);
 void mostrarIntersecciones(Interseccion *lista, int cantidad);
 void limpiarBuffer();
-//Funcion principal
 
+//Funcion principal
 int main(int argc, char *argv[]) {
 	FILE *fp;
 	fp=fopen("lista_enlazadas.txt","w+");
 	if(fp==NULL){
 		fputs("error al abrir el archivo",stderr);
 		exit(1);
-	}
-		
-		
+	}	
 	int cantidad = 0;
 	int opcion;
 	Interseccion *inter =NULL;
