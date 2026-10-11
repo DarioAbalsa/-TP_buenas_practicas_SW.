@@ -65,11 +65,7 @@ void menu() {
 	printf("\n=== INTERSECCIONES ===\n");
 	printf("1. Ingresar Dato\n");
 	printf("2. mostrar intersecciones\n");
-	printf("3. Salir\n");
-	//printf("4. Redimensionar tablero\n");
-	//printf("5. Mostrar disparos realizados\n");
-	//printf("6. Ver ranking de ganadores\n");   
-	//printf("7. Salir\n");                        
+	printf("3. Salir\n");                      
 }
 void limpiarBuffer() {
 	int c;
@@ -120,7 +116,7 @@ Interseccion *temporal = (Interseccion *) realloc(lista, nuevaCantidad * sizeof(
 	}
 	}while(1);
 	
-	// Incrementamos la cantidad total de jugadores
+	// Incrementamos la cantidad total de intersecciones
 	(*cantidad)++;
 	printf("Interseccion agregada\n");
 	
